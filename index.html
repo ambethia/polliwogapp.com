@@ -19,7 +19,7 @@
   google.load("jquery", "1");
   google.setOnLoadCallback(function() {
     $("a[rel*='ext']").click(function(){
-      pageTracker._trackPageview('/outgoing/'+ $(this).attr('href'));
+      _gaq.push(['_trackPageview', '/outgoing/'+ $(this).attr('href')]);
     });
   });
   //]]>
